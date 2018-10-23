@@ -1,0 +1,33 @@
+$ yarn start
+
+-> https://www.apollographql.com/docs/react/essentials/get-started.html
+$ yarn add apollo-boost react-apollo graphql
+
+
+{
+  posts {
+    id
+    title
+    body
+    featureImage {
+      id
+      fileName
+      mimeType
+    }
+  }
+}
+
+{
+  viewer {
+    project(id:"9e95dc6fe83245b8a56f038eedcb83f4") {
+        stage(name:"master") {
+        assetConfig {
+          apiKey
+        }
+      }
+    }
+  }
+}
+
+Code => /src/App.js
+
